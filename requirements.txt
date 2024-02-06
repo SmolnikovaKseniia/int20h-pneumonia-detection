@@ -1,0 +1,5 @@
+$ pip freeze
+tensorflow == 2.15.0
+numpy == 1.24.4
+pandas == 2.2.0
+pydicom == 2.4.4
