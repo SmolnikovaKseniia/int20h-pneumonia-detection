@@ -63,6 +63,10 @@ test_images = '/kaggle/input/rsna-pneumonia-detection-challenge/stage_2_test_ima
 ~~~python
 PATH = '/kaggle/input/rsna-pneumonia-detection-challenge/stage_2_train_labels.csv'
 ~~~
+**3.** If you want to train model by yourself, it would be the best to make 15 - 25 epochs of running. (train.py, 277 line)
+~~~python
+model = model.fit_generator(train_gen, validation_data=valid_gen, callbacks=[learning_rate], epochs=15, workers=4, use_multiprocessing=True)
+~~~
 
 ## **Support**
 If you have some questions or need some help, contact me :
