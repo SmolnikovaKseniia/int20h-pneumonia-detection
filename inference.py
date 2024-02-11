@@ -1,7 +1,7 @@
 from tensorflow.keras.models import load_model
 
 
-model = load_model('my_model.h5')
+model = load_model('model.h5')
 
 test_images = '/kaggle/input/rsna-pneumonia-detection-challenge/stage_2_test_images'
 test_filenames = os.listdir(test_images)
