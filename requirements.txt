@@ -3,3 +3,6 @@ tensorflow == 2.15.0
 numpy == 1.24.4
 pandas == 2.2.0
 pydicom == 2.4.4
+scipy == 1.11.4
+scikit == 0.22.0
+matplotlib == 3.7.4
