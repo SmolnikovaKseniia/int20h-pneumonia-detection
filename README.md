@@ -30,7 +30,7 @@ pip install -r requirements.txt
 ~~~python
 FOLDER = '/kaggle/input/rsna-pneumonia-detection-challenge/stage_2_train_images'
 ~~~
-   - Variable 'test_image'(inference.py, 1 line) is the folder that contains the images based on which you want to make predictions
+   - Variable 'test_image'(inference.py, 6 line) is the folder that contains the images based on which you want to make predictions
 ~~~python
 test_images = '/kaggle/input/rsna-pneumonia-detection-challenge/stage_2_test_images'
 ~~~
