@@ -24,12 +24,21 @@ pip install -r requirements.txt
 
 ## **Usage**
 **To use this project, you can follow these steps:**
- **1.** Data Preparation: Upload training data(stage_2_train_images) and copy path to folder. 
+ **1.** Data Preparation: Upload training data(folder stage_2_train_images and folder stage_2_train_labels.csv) and copy path to folder and to the file. 
  **2.** After installing of all requirements, you need to change some directories, which contains in variables:
-   - Variable '' path to stage_2_train_images, paste copied code
+   - Variable 'FOLDER'(train.py, 32 line) path to stage_2_train_images, paste copied code
 ~~~python
+FOLDER = '/kaggle/input/rsna-pneumonia-detection-challenge/stage_2_train_images'
 ~~~
-   - Variable 'test_image' is the folder that contains the images based on which you want to make predictions
+   - Variable 'test_image'(inference.py, 1 line) is the folder that contains the images based on which you want to make predictions
 ~~~python
 test_images = '/kaggle/input/rsna-pneumonia-detection-challenge/stage_2_test_images'
 ~~~
+   - Variable 'PATH'(train.py, 16 line) path to stage_2_train_images, paste copied code
+~~~python
+PATH = '/kaggle/input/rsna-pneumonia-detection-challenge/stage_2_train_labels.csv'
+~~~
+
+## **Support**
+If you have some questions or need some help, contact me on email:
+**smonikova.ksenia@gmail.com**
