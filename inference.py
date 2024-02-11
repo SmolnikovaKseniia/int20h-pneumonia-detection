@@ -1,11 +1,14 @@
 from tensorflow.keras.models import load_model
+
+
+model = load_model('my_model.h5')
+
 test_images = '/kaggle/input/rsna-pneumonia-detection-challenge/stage_2_test_images'
 test_filenames = os.listdir(test_images)
 print('n test samples:', len(test_filenames))
 
 test_gen = Generator(test_images, test_filenames, None, batch_size=25, image_size=256, shuffle=False, predict=True)
 submission_dict = {}
-model = load_model('my_model.h5')
 
 for imgs, filenames in test_gen:
     preds = model.predict(imgs)
