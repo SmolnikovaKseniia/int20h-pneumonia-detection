@@ -274,6 +274,7 @@ train_images = '/kaggle/input/rsna-pneumonia-detection-challenge/stage_2_train_i
 train_gen = Generator(train_images, training_filenames, pneumonia_locations, batch_size=32, image_size=256, shuffle=True, augment=True, predict=False)
 valid_gen = Generator(train_images, validation_filenames, pneumonia_locations, batch_size=32, image_size=256, shuffle=False, predict=False)
 
-model.fit_generator(train_gen, validation_data=valid_gen, callbacks=[learning_rate], epochs=20, workers=4, use_multiprocessing=True)
+model = model.fit_generator(train_gen, validation_data=valid_gen, callbacks=[learning_rate], epochs=20, workers=4, use_multiprocessing=True)
 
+save_model(model, 'model.h5')
 model.save_weights('model_weights.h5')
