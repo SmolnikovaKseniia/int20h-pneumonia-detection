@@ -1,7 +1,6 @@
 # Project: Pneumonia detection model
 
 ## **Description**
-The model helps to find any darkening in the lungs, to determine the size of these darkenings. Determines whether the patient has pneumonia
 
 This repository contains code for training a pneumonia detection model using chest X-ray images and based on this model use inference.py to to find any darkening in the lungs, to determine the size of these darkenings.
 
