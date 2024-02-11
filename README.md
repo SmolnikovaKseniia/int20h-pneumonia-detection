@@ -40,5 +40,5 @@ PATH = '/kaggle/input/rsna-pneumonia-detection-challenge/stage_2_train_labels.cs
 ~~~
 
 ## **Support**
-If you have some questions or need some help, contact me on email:
+If you have some questions or need some help, contact me :
 **smonikova.ksenia@gmail.com**
